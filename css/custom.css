@@ -1,0 +1,196 @@
+[data-bs-theme=light] body {
+    /* font-family: 'PT Sans', sans-serif !important; */
+    font-size: 13px !important;
+    background-color: #343434;
+}
+.bg-dark {background-color: #343a40!important;
+}
+.bg-theme {background-color: var(--velocitytoko-color-main) !important;}
+
+.colortheme {color: var(--velocitytoko-color-main) !important;}
+
+.bg-gray {background-color: #ECECEC !important;}
+
+.container {max-width: 1100px !important;}
+
+.container {max-width: 100%;}
+.kontak-header a {
+    color: var(--bs-white);
+    padding: 0.2em;
+    font-size: 1em;
+}
+.profile-icons svg {
+    width: 16px;
+    height: 16px;
+}
+.cart-arsip svg {
+    color: var(--bs-white);
+}
+.page-title {
+    color: var(--velocitytoko-color-main);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.pagi-home .page-numbers{
+    color: var(--velocitytoko-color-main);
+    background-color: var(--bs-light);
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 2px;
+}
+#main-navi {
+    margin: 10px 0 0;
+    padding: 0 !important;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+#primary-menu>li>a {
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: bold;
+    padding: .6rem 1.2rem !important;
+}
+#primary-menu > li.current_page_item > a,
+#primary-menu > li.current-menu-item > a,
+#primary-menu > li > a:hover {
+    color: var(--velocitytoko-color-main);
+    /* background-color: var(--velocitytoko-color-main); */
+}
+.dropdown-menu>li>a {
+    font-size: .85rem;
+    padding: .6rem 1.2rem !important;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none !important;
+}
+.carousel-control-next-icon:after
+{
+  content: '\f105';
+  font-family: 'FontAwesome';
+  font-size: 50px;
+  color: #333;
+}
+.carousel-control-prev-icon:after {
+  content: '\f104';
+  font-family: 'FontAwesome';
+  font-size: 50px;
+  color: #333;
+}
+.title-single-part {
+    margin: 0 0 15px;
+    padding: 10px;
+    color: var(--velocitytoko-color-main);
+    background-color: #f3f3f3;
+    border: 1px solid rgba(0,0,0,.125);
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+    line-height: 1.2;
+    border-radius: 0.25rem;
+}
+/* .velocity-footer {
+} */
+/* widget style */
+.widget-area aside {
+    margin-bottom: 15px;
+    border: 1px solid rgba(0,0,0,.125);
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 5px;
+}
+.widget_recent_entries a {
+    color: var(--velocitytoko-color-main);
+}
+.widget-area .widget .widget-title {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    color: var(--bs-white);
+    font-weight: bold;
+    background-color: var(--velocitytoko-color-main);
+    padding: 5px;
+    margin: -10px -10px 10px;
+    font-size: .9rem;
+    line-height: 1.3;
+}
+.footer-widget .widget .widget-title {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    color: var(--velocitytoko-color-main);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 6px 10px;
+    line-height: 1.3;
+}
+.widget_nav_menu ul {
+    padding: 0 !important;
+}
+.widget_nav_menu ul li {
+    list-style: none;
+}
+.widget_nav_menu ul li a {
+    width: 100%;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+}
+/* end widget style */
+
+.cari {
+    position: relative;
+}
+.cari .tombols {
+	display: inline-block;
+}
+.cari .tombols.collapsed::after {
+	content: '\f00d';
+    font-family: 'FontAwesome';
+}
+.cari .tombols.collapsed>svg{
+    display: none;
+}
+.cari .search-head {
+    display:none;
+}
+.cari #searchform {
+	position: absolute;
+	right: 0;
+	z-index: 9999;
+	padding: 5px 5px;
+	top: 150%;
+	display: none;
+	width: 300px;
+    background-color: var(--bs-white);
+}
+#searchform .search-input {
+	width: 85%;
+	float: left;
+	padding: 6px 10px;
+	box-shadow: inset 0 0 15px 0 rgba(0,0,0,.08);
+	border-right: 0;
+}
+#searchform:after {
+    content: '\f0d8';
+    font-family: fontawesome;
+    position: absolute;
+    top: -22px;
+    right: 10px;
+    font-size: 25px;
+    color: #fff;
+}
+
+@media only screen and (min-width:769px) {
+    .kontak-header {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+    }
+}
+@media only screen and (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    .st-key {
+        width: 25% !important;
+        text-align: left !important;
+    }
+}
